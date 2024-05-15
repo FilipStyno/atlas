@@ -1,0 +1,117 @@
+/* Obecné styly */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.form-group {
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+#selContinent {
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+/* Styly pro karty států */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Zajistí zalamování karet na nové řádky */
+    justify-content: center; /* Centrovat karty na stránce */
+    gap: 50px; /* Přidání mezery mezi kartami */
+    padding-left: 10px; /* Vyrovnání mezer na levé a pravé straně */
+    padding-right: 10px; /* Vyrovnání mezer na levé a pravé straně */
+}
+
+.card {
+    margin: 10px; /* Přidání mezery mezi kartami */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    width: 200px; /* Nastavení pevné šířky karty */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%; /* Přizpůsobení šířky vlajky šířce karty */
+    height: auto; /* Zachování poměru stran vlajky */
+}
+
+.card-body {
+    text-align: center;
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.card-text {
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+/* Styly pro footer */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.text-danger {
+    color: #dc3545;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Responzivní styly */
+@media (max-width: 1200px) {
+    .card {
+        width: 180px; /* Zmenšení šířky karty pro menší obrazovky */
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+        width: 160px; /* Zmenšení šířky karty pro menší obrazovky */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 140px; /* Zmenšení šířky karty pro menší obrazovky */
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 100%; /* Karty zabírají celou šířku na velmi malých obrazovkách */
+    }
+
+    .row {
+        gap: 10px; /* Zmenšení mezery mezi kartami na velmi malých obrazovkách */
+    }
+}
